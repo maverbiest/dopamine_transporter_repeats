@@ -134,20 +134,6 @@ def main():
     if not args.local_output_dir:
         args.local_output_dir = args.global_output_dir
     detect_trs(args.fasta_file, args.global_output_dir, args.local_output_dir, max_seqs=args.max_seqs)
-    # try:
-    #     args = cla_parser()
-    #     # If local dir is not specified, set local to global
-    #     if not args.local_output_dir:
-    #         args.local_output_dir = args.global_output_dir
-    #     detect_trs(args.fasta_file, args.global_output_dir, args.local_output_dir)
-    # except:
-    #     test_path = "/cfs/earth/scratch/verb/projects/CRC_STRs/data/test/fasta/tiny.fa"
-    #     # test_path = "/cfs/earth/scratch/verb/projects/CRC_STRs/data/test/avg_protein_coding_gene.fa"
-    #     test_output = "/cfs/earth/scratch/verb/projects/CRC_STRs/results/test/"
-    #     detectors = ["TRF", "XSTREAM"]
-    #     detect_trs(test_path, test_output, test_output, write=False, detectors=detectors)
-
-
 
 if __name__ == "__main__":
     main()
