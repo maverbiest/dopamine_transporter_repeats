@@ -1,0 +1,1 @@
+for i in $(find results/human/refined_p0.05_d0.05/ -name "*.pickle"); do python3 scripts/python/pickle_to_tsv.py -p $i -o results/human/tsv_refined_p0.05_d0.05/ -i $(basename -s _refined.pickle ${i}); done
